@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Image Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Creative Image Upload</h1>
+        <p>Upload your creative images and explore AI-generated art!</p>
+    </header>
+
+    <main>
+        <!-- Image Upload Section -->
+        <section class="upload-section" id="dropZone">
+            <h2>Upload Your Image</h2>
+            <p>Drag and drop or click to upload</p>
+            <input type="file" id="imageUpload" accept="image/*" style="display: none;">
+            <button class="upload-btn" onclick="document.getElementById('imageUpload').click()">Choose Image</button>
+        </section>               
+
+        <!-- Gallery Section -->
+        <section class="gallery-section">
+            <h2>Image Gallery</h2>
+            <p>Your uploaded and generated images will appear here!</p>
+            <div class="gallery-grid">
+                <!-- Placeholder images (for now) -->
+                <div class="image-placeholder">Image 1</div>
+                <div class="image-placeholder">Image 2</div>
+                <div class="image-placeholder">Image 3</div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+<div id="image-container">
+    <!-- Generated image will appear here -->
+</div>
+
+<script src="script.js"></script>
+
